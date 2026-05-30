@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trainwise AI | Träningsguide och AI Agency Portfolio</title>
+    <meta
+      name="description"
+      content="Trainwise AI hjälper träningsintresserade att välja träningsschema baserat på mål, nivå, tid och utrustning."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Trainwise AI startsida">
+        <span class="brand-mark">T</span>
+        <span>Trainwise AI</span>
+      </a>
+      <nav class="site-nav" aria-label="Huvudmeny">
+        <a href="#guide">Guide</a>
+        <a href="#scheman">Scheman</a>
+        <a href="#ovningar">Övningar</a>
+        <a href="#case">Case</a>
+        <a href="#rapport">AI-process</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img src="assets/images/Hero_image.png" alt="Person som tränar i ett modernt gym" class="hero-image">
+        <div class="hero-content">
+          <p class="eyebrow">AI Agency Portfolio</p>
+          <h1 id="hero-title">Trainwise AI</h1>
+          <p>
+            En seriös träningsguide som hjälper dig välja rätt schema utifrån mål,
+            erfarenhet, tid och tillgång till utrustning.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#guide">Starta guiden</a>
+            <a class="button secondary" href="#scheman">Se scheman</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro band" aria-labelledby="idea-title">
+        <div class="section-heading">
+          <p class="eyebrow">Grundidé</p>
+          <h2 id="idea-title">En digital coach för människor som vill träna smartare</h2>
+        </div>
+        <div class="intro-grid">
+          <article>
+            <h3>Problem</h3>
+            <p>
+              Många vill börja träna men fastnar i för många val: gym eller hemma,
+              styrka eller kondition, maskiner eller fria vikter, tre dagar eller sex.
+            </p>
+          </article>
+          <article>
+            <h3>Lösning</h3>
+            <p>
+              Trainwise AI samlar träningsscheman, övningsbilder, video och ljud i en
+              tydlig guide där användaren får ett rimligt första val.
+            </p>
+          </article>
+          <article>
+            <h3>Målgrupp</h3>
+            <p>
+              Träningsintresserade personer i olika åldrar och ekonomiska situationer,
+              från nybörjare till mer avancerade användare.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="guide" class="planner" aria-labelledby="guide-title">
+        <div class="section-heading">
+          <p class="eyebrow">Interaktiv guide</p>
+          <h2 id="guide-title">Hitta ett schema som passar dig</h2>
+          <p>Välj det som stämmer bäst. Guiden prioriterar ett tryggt och realistiskt upplägg.</p>
+        </div>
+
+        <form class="planner-form" id="plannerForm">
+          <fieldset>
+            <legend>Vad är ditt huvudmål?</legend>
+            <label><input type="radio" name="goal" value="strength" checked> Bygga styrka och muskler</label>
+            <label><input type="radio" name="goal" value="fatloss"> Fettförbränning och bättre ork</label>
+            <label><input type="radio" name="goal" value="mobility"> Rörlighet, hälsa och mindre stelhet</label>
+          </fieldset>
+          <fieldset>
+            <legend>Hur erfaren är du?</legend>
+            <label><input type="radio" name="level" value="beginner" checked> Nybörjare</label>
+            <label><input type="radio" name="level" value="intermediate"> Van tränande</label>
+            <label><input type="radio" name="level" value="advanced"> Avancerad</label>
+          </fieldset>
+          <fieldset>
+            <legend>Hur många dagar per vecka?</legend>
+            <label><input type="radio" name="days" value="3" checked> 3 dagar</label>
+            <label><input type="radio" name="days" value="4"> 4 dagar</label>
+            <label><input type="radio" name="days" value="5"> 5-6 dagar</label>
+          </fieldset>
+          <fieldset>
+            <legend>Vilken utrustning har du?</legend>
+            <label><input type="radio" name="equipment" value="home" checked> Hemma eller kroppsvikt</label>
+            <label><input type="radio" name="equipment" value="machines"> Gymmaskiner</label>
+            <label><input type="radio" name="equipment" value="free"> Fria vikter och gym</label>
+          </fieldset>
+        </form>
+
+        <aside class="recommendation" aria-live="polite">
+          <p class="eyebrow">Rekommendation</p>
+          <h3 id="recommendationTitle">Helkropp 3 dagar</h3>
+          <p id="recommendationText">
+            Ett enkelt upplägg med basövningar som bygger teknik, vana och grundstyrka.
+          </p>
+          <a class="button primary" id="recommendationLink" href="#schema-fullbody">Öppna schemat</a>
+        </aside>
+      </section>
+
+      <section id="scheman" class="band" aria-labelledby="plans-title">
+        <div class="section-heading">
+          <p class="eyebrow">Träningsscheman</p>
+          <h2 id="plans-title">Stort urval för olika mål, nivåer och utrustning</h2>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filtrera scheman">
+          <button class="filter active" data-filter="all" type="button">Alla</button>
+          <button class="filter" data-filter="beginner" type="button">Nybörjare</button>
+          <button class="filter" data-filter="muscle" type="button">Muskelbygge</button>
+          <button class="filter" data-filter="home" type="button">Hemma</button>
+          <button class="filter" data-filter="conditioning" type="button">Kondition</button>
+          <button class="filter" data-filter="advanced" type="button">Avancerat</button>
+        </div>
+
+        <div class="plans-grid">
+          <article class="plan-card" id="schema-fullbody" data-tags="beginner muscle free">
+            <img src="assets/images/styrketraning.png" alt="Styrketräning med fria vikter">
+            <div>
+              <p class="plan-meta">3 dagar | Fria vikter | Nybörjare</p>
+              <h3>Helkropp 3 dagar</h3>
+              <ul>
+                <li>Knäböj: 3 x 8-10</li>
+                <li>Bänkpress: 3 x 8-10</li>
+                <li>Marklyft: 3 x 8-10</li>
+                <li>Roddmaskin: 3 x 10-12</li>
+                <li>Militärpress: 3 x 10</li>
+                <li>Plankan: 3 x 45 sek</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="plan-card" id="schema-machines" data-tags="beginner machines muscle">
+            <img src="assets/images/bankpress.png" alt="Bröstpress och bänkpress i gymmiljö">
+            <div>
+              <p class="plan-meta">3 dagar | Maskiner | Trygg start</p>
+              <h3>Endast gymmaskiner</h3>
+              <ul>
+                <li>Benpress: 3 x 12</li>
+                <li>Benspark: 3 x 12</li>
+                <li>Bröstpress: 3 x 10</li>
+                <li>Latsdrag: 3 x 10</li>
+                <li>Sittande rodd: 3 x 12</li>
+                <li>Axelpress: 3 x 12</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="plan-card" id="schema-home" data-tags="beginner home conditioning">
+            <img src="assets/images/hemmatraning.png" alt="Hemmaträning med kroppsvikt">
+            <div>
+              <p class="plan-meta">3 dagar | Hemma | Utan redskap</p>
+              <h3>Hemmaträning</h3>
+              <ul>
+                <li>Knäböj kroppsvikt: 3 x 15-20</li>
+                <li>Utfallssteg: 3 x 10 per ben</li>
+                <li>Armhävningar: 3 x max</li>
+                <li>Rygglyft: 3 x 15</li>
+                <li>Dips mot stol: 3 x 12</li>
+                <li>Mountain climbers: 3 x 30 sek</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="plan-card" id="schema-ppl" data-tags="muscle advanced free">
+            <img src="assets/images/marklyft.png" alt="Marklyft som del av tung styrketräning">
+            <div>
+              <p class="plan-meta">3-6 dagar | Gym | Muskelbygge</p>
+              <h3>Push/Pull/Legs</h3>
+              <ul>
+                <li>Push: bänkpress, hantelpress, sidolyft, triceps</li>
+                <li>Pull: marklyft, pull-ups, kabelrodd, facepulls</li>
+                <li>Legs: knäböj, raka marklyft, benpress, vadpress</li>
+                <li>Passar när du vill träna samma muskelgrupp oftare.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="plan-card" id="schema-upper" data-tags="muscle intermediate free">
+            <img src="assets/images/pull_up.png" alt="Pull-up för överkroppsstyrka">
+            <div>
+              <p class="plan-meta">4 dagar | Gym | Van tränande</p>
+              <h3>Upper/Lower Split</h3>
+              <ul>
+                <li>Måndag: överkropp</li>
+                <li>Tisdag: underkropp</li>
+                <li>Torsdag: överkropp</li>
+                <li>Fredag: underkropp</li>
+                <li>Bra balans mellan volym och återhämtning.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="plan-card" id="schema-conditioning" data-tags="conditioning home beginner">
+            <img src="assets/images/kondition.png" alt="Konditionsträning med hög energi">
+            <div>
+              <p class="plan-meta">3-4 dagar | Kondition | Hälsa</p>
+              <h3>Kondition och fettförbränning</h3>
+              <ul>
+                <li>Intervaller: 8 x 30 sek arbete</li>
+                <li>Promenad eller cykel: 30-45 min</li>
+                <li>Cirkelpass: burpees, squats, climbers</li>
+                <li>Avsluta med lätt core och rörlighet.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="plan-card" id="schema-mobility" data-tags="home mobility beginner">
+            <img src="assets/images/mobilitet_och_yoga.png" alt="Mobilitet och yoga">
+            <div>
+              <p class="plan-meta">2-5 dagar | Hemma | Hälsa</p>
+              <h3>Mobilitet och yoga</h3>
+              <ul>
+                <li>Höftöppnare: 2 x 45 sek per sida</li>
+                <li>Bröstryggsrotation: 2 x 10 per sida</li>
+                <li>Djup knäböjsposition: 3 x 30 sek</li>
+                <li>Lugn andning och kontroll i varje rörelse.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="plan-card" id="schema-gvt" data-tags="advanced muscle free">
+            <img src="assets/images/fettforbranning.png" alt="Intensiv träning med hög puls">
+            <div>
+              <p class="plan-meta">Avancerat | Gym | Hög volym</p>
+              <h3>German Volume Training</h3>
+              <ul>
+                <li>10 x 10 på en stor övning</li>
+                <li>60-90 sek vila</li>
+                <li>Cirka 60 procent av 1RM</li>
+                <li>Kräver bra sömn, mat och återhämtning.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="ovningar" class="exercise-section" aria-labelledby="exercise-title">
+        <div class="section-heading">
+          <p class="eyebrow">Övningsbibliotek</p>
+          <h2 id="exercise-title">Bilder och teknikstöd för viktiga övningar</h2>
+        </div>
+        <div class="exercise-grid">
+          <article class="exercise-card">
+            <img src="assets/images/Knaboj.png" alt="Knäböj med skivstång">
+            <h3>Knäböj</h3>
+            <p>Håll bröstet stolt, spänn bålen och pressa knäna i samma riktning som tårna.</p>
+          </article>
+          <article class="exercise-card">
+            <img src="assets/images/bankpress.png" alt="Bänkpress med skivstång">
+            <h3>Bänkpress</h3>
+            <p>Skulderbladen bakåt, fötterna stadigt i golvet och kontrollerad sänkning mot bröstet.</p>
+          </article>
+          <article class="exercise-card">
+            <img src="assets/images/marklyft.png" alt="Marklyft med skivstång">
+            <h3>Marklyft</h3>
+            <p>Starta nära stången, håll ryggen neutral och låt höften och benen driva lyftet.</p>
+          </article>
+          <article class="exercise-card">
+            <img src="assets/images/push_up.png" alt="Armhävning">
+            <h3>Armhävning</h3>
+            <p>Rak kroppslinje, händer under axlarna och full kontroll både ned och upp.</p>
+          </article>
+          <article class="exercise-card">
+            <img src="assets/images/pull_up.png" alt="Pull-up">
+            <h3>Pull-up</h3>
+            <p>Dra skulderbladen nedåt först, håll kroppen stabil och sikta bröstet mot stången.</p>
+          </article>
+        </div>
+
+        <div class="media-grid" aria-label="Video och ljud">
+          <article class="media-panel">
+            <h3>Gymvideo</h3>
+            <video controls poster="assets/images/Hero_image.png">
+              <source src="assets/video/gymvideo.mp4" type="video/mp4">
+              Din webbläsare kan inte spela upp videon.
+            </video>
+          </article>
+          <article class="media-panel">
+            <h3>AI-röst och podcast</h3>
+            <p>Voiceover beskriver tjänsten. Podcasten finns som extra material i projektmappen.</p>
+            <audio controls src="assets/audio/WhatIsTrainwiseAi.mp3"></audio>
+          </article>
+        </div>
+      </section>
+
+      <section id="case" class="band case-section" aria-labelledby="case-title">
+        <div class="section-heading">
+          <p class="eyebrow">Fiktivt kundcase</p>
+          <h2 id="case-title">Så hjälper Trainwise AI en användare</h2>
+        </div>
+        <div class="case-layout">
+          <article>
+            <h3>Kunden</h3>
+            <p>
+              Sara är 17 år, vill börja träna seriöst men vet inte om hon ska välja
+              hemmaträning, maskiner eller fria vikter. Hon har tre dagar i veckan och vill
+              bygga styrka utan att skada sig.
+            </p>
+          </article>
+          <article>
+            <h3>Lösningen</h3>
+            <p>
+              Guiden rekommenderar Helkropp 3 dagar eller Endast gymmaskiner. Hon får
+              övningar med set, reps, vila och teknikbilder. När hon blir tryggare kan hon
+              gå vidare till Upper/Lower.
+            </p>
+          </article>
+          <article>
+            <h3>Kundnytta</h3>
+            <p>
+              Sara slipper gissa, får en tydlig start och kan välja efter sin situation.
+              AI:n tillför värde genom att strukturera många alternativ till ett personligt
+              och lättbegripligt beslut.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="rapport" class="report-section" aria-labelledby="report-title">
+        <div class="section-heading">
+          <p class="eyebrow">Så använde jag AI</p>
+          <h2 id="report-title">Rapportdel för inlämningen</h2>
+        </div>
+        <div class="report-grid">
+          <article>
+            <h3>Verktyg</h3>
+            <p>
+              Bilder skapades med Gemini, logotypidé med Looka, video med Vidu, AI-röst
+              med Minimax och podcast med NotebookLM. Webbplatsen sattes samman med AI-stöd.
+            </p>
+          </article>
+          <article>
+            <h3>Bearbetning</h3>
+            <p>
+              Materialet sorterades efter mål, nivå och utrustning. Scheman förkortades och
+              skrevs om så de blir tydliga på en hemsida istället för att bara ligga i PDF.
+            </p>
+          </article>
+          <article>
+            <h3>Kvalitetskontroll</h3>
+            <p>
+              Jag kontrollerade att sidan är självständig, att media finns direkt på sidan,
+              att guiden ger rimliga rekommendationer och att innehållet matchar målgruppen.
+            </p>
+          </article>
+          <article>
+            <h3>AI-begrepp</h3>
+            <p>
+              Projektet använder generativ AI för text, bild, ljud och video. Promptning,
+              urval, redigering och granskning påverkade slutresultatets kvalitet.
+            </p>
+          </article>
+        </div>
+        <div class="document-links">
+          <a href="docs/Bedömningsmatris Slutprojekt_ AI Agency Portfolio.pdf">Bedömningsmatris</a>
+          <a href="docs/Sorterat_Komplett_Traningsbibliotek.pdf">Komplett träningsbibliotek</a>
+          <a href="AI Agency Portfolio information och fil hantering.pdf">Projektinformation</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Trainwise AI | AI Agency Portfolio | Träningsscheman är förslag. Rådfråga vårdpersonal vid skador eller sjukdom.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
